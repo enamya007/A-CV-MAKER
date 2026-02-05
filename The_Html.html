@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Générateur Interactif</title>
+    <link rel="stylesheet" href="The_Css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 id="nom"></h1>
+                <p id="titre" class="titre"></p>
+                <div class="contact-info" id="contact-info"></div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Colonne Gauche -->
+            <aside class="sidebar">
+                <!-- Profil -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-user"></i> Profil</h2>
+                    <p id="profil" class="profil-text"></p>
+                </section>
+
+                <!-- Formation -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Formation</h2>
+                    <div id="formation"></div>
+                </section>
+
+                <!-- Langues -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-language"></i> Langues</h2>
+                    <div id="langues"></div>
+                </section>
+
+                <!-- Qualités -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-star"></i> Qualités</h2>
+                    <div id="qualites" class="tags"></div>
+                </section>
+
+                <!-- Intérêts -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-heart"></i> Centres d'intérêt</h2>
+                    <div id="interets" class="tags"></div>
+                </section>
+            </aside>
+
+            <!-- Colonne Droite -->
+            <main class="content">
+                <!-- Compétences Techniques -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-code"></i> Compétences Techniques</h2>
+                    <div id="competences"></div>
+                </section>
+
+                <!-- Projets -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-project-diagram"></i> Projets</h2>
+                    <div id="projets"></div>
+                </section>
+
+                <!-- Parcours Scolaire -->
+                <section class="section">
+                    <h2 class="section-title"><i class="fas fa-school"></i> Parcours Scolaire</h2>
+                    <div id="parcours"></div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <!-- Bouton pour imprimer/télécharger -->
+    <button class="print-btn" onclick="window.print()">
+        <i class="fas fa-download"></i> Télécharger PDF
+    </button>
+
+    <script src="The_First_Js.js"></script>
+    <script src="The_Second_Js.js"></script>
+</body>
+</html>
